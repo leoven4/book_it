@@ -3,19 +3,24 @@ import "./search_form.scss";
 import FormInput from "../form_input/form_input";
 
 const SearchForm = () => {
+  var question_mark = ""
+  
+  const onInputChange = (event) => {
+    question_mark =  event.target.value;
+    console.log(event.target.value)
+  }
+
   return (
-    <div>
-      <div className="main_text_container">
+    <div className="main_text_container">
+      <div className="main_text">
         <p>{"Find the working place that best suits you today"}</p>
       </div>
       <div>
         <FormInput
-          // label = 'Password'
           type="text"
-          // required
+          placeholder="?"
           name="search_form"
-          value={"?"}
-          // onChange=
+          onChange={onInputChange}
         />
       </div>
     </div>

@@ -1,11 +1,17 @@
 body {
+  background: linear-gradient(89deg, #FF5EDF 0%, #04C8DE 100%);
+
   margin: 0;
-  font-family: Chivo Mono;
+	font-family: 'Courier New', monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   padding: 20px 40px;
 }
 
+input {
+  font-family: 'Courier New', monospace;
+
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

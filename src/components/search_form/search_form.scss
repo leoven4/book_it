@@ -1,5 +1,12 @@
 .main_text_container {
-	width: 700px;
-	text-align: center;
-	
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+
+	.main_text {
+		width: 700px;
+		text-align: center;
+		font-size: 40px;
+		color: white;
+	}
 }

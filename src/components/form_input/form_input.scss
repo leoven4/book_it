@@ -13,9 +13,7 @@ $main-color: black;
 
   .form-input {
     background: none;
-    background-color: white;
-    color: $sub-color;
-    font-size: 18px;
+    font-size: 30px;
     padding: 10px 10px 10px 5px;
     display: block;
     width: 100%;
@@ -23,7 +21,7 @@ $main-color: black;
     border-radius: 0;
     border-bottom: 1px solid $sub-color;
     margin: 25px 0;
-
+    text-align: center;
     &:focus {
       outline: none;
     }
@@ -38,7 +36,7 @@ $main-color: black;
   }
 
   .form-input-label {
-    color: $sub-color;
+    color: white;
     font-size: 16px;
     font-weight: normal;
     position: absolute;
@@ -51,4 +49,9 @@ $main-color: black;
       @include shrinkLabel();
     }
   }
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+	color: white;
+	opacity: 1; /* Firefox */
 }
