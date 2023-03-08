@@ -6,20 +6,17 @@ import ProductCard from '../../components/product_card/product_card';
 import { CategoriesContext } from "../../context/categories";
 import './category.scss';
 
-const Category = () => {
-  // const { category } = useParams();
-  const category  = "hats";
-
+const Category = (props) => {
   const { categoriesMap } = useContext(CategoriesContext);
-  const [products, setProducts] = useState(categoriesMap[category]);
+  const [products, setProducts] = useState(categoriesMap[props.category]);
 
   useEffect(() => {
-    setProducts(categoriesMap[category]);
-  }, [category, categoriesMap]);
+    setProducts(categoriesMap[props.category]);
+  }, [props.category, categoriesMap]);
 
   return (
     <Fragment>
-      <p className="category_title">{category.toUpperCase()}</p>
+      <p className="category_title">{props.category.toUpperCase()}</p>
       <div className="category_container">
         {products &&
           products.map((product) => (

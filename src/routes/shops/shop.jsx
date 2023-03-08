@@ -1,9 +1,9 @@
 import Category from '../category/category';
 import './shop.scss';
 
-const Shop = () => {
+const Shop = (props) => {
   return (
-    <Category />
+    <Category category={props.category} />
   );
 };
 export default Shop;

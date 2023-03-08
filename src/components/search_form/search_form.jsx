@@ -15,14 +15,12 @@ const SearchForm = () => {
       <div className="main_text">
         <p>{"Find the working place that best suits you today"}</p>
       </div>
-      <div>
-        <FormInput
-          type="text"
-          placeholder="?"
-          name="search_form"
-          onChange={onInputChange}
-        />
-      </div>
+      <FormInput
+        type="text"
+        placeholder="?"
+        name="search_form"
+        onChange={onInputChange}
+      />
     </div>
   );
 };

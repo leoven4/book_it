@@ -21,7 +21,7 @@ const Navigation = () => {
           <CrwLogo className="logo" />
         </Link>
         <div className="nav_links_container">
-          <Link className="nav_link" to="shop">
+          <Link className="nav_link" to="/shop">
             PLACES
           </Link>
           {currentUser ? (
