@@ -1,0 +1,12 @@
+pieces..
+Places
+	- add more images to product_card
+	- add maps information
+	- add provider link
+	- add description and specs
+	- add provider/user discrimination
+
+	- add profile 
+	- add search capabilities
+
+	
