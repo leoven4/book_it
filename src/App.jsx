@@ -9,6 +9,7 @@ const App = () => {
     <Routes>
       <Route path='/' element={<Navigation />}>
         <Route index element={<Home />} />
+        
         <Route path='shop' element={<Category category="hats"/>} />
         <Route path='auth' element={<Authentication />} />
       </Route>
